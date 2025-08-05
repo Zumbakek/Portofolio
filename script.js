@@ -1,10 +1,23 @@
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.getElementById('nav-links').innerHTML; // Get the inner HTML of the desktop links
 
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("mobile-menu-toggle");
-    const navLinks = document.getElementById("nav-links");
+// Populate mobile menu with the same links
+document.getElementById('mobile-nav-links').innerHTML = navLinks;
 
-    toggleBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("hidden");
+// Toggle mobile menu visibility
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+    menuBtn.setAttribute('aria-expanded', !isExpanded);
+});
+
+// Close mobile menu when a link is clicked
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuBtn.setAttribute('aria-expanded', 'false');
     });
 });
 

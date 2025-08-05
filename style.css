@@ -1,5 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+#mobile-menu {
+    background-color: #2d3748;
+    /* Dark gray background */
+    border-top: 2px solid #4a5568;
+    /* Lighter gray border */
+    padding: 0.5rem 0;
+    /* Reduced padding for the menu */
+    transition: max-height 0.3s ease;
+    /* Smooth transition for opening/closing */
+}
+
+#mobile-nav-links a {
+    padding: 0.5rem 1rem;
+    /* Reduced padding for links */
+    color: white;
+    /* Link color */
+    text-align: center;
+    /* Center align text */
+    display: block;
+    /* Make links block elements */
+    width: 100%;
+    /* Full width */
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
+    margin: 0;
+    /* Remove margin */
+}
+
+#mobile-nav-links a:hover {
+    background-color: #4a5568;
+    /* Change background on hover */
+}
+
 .portfolio-container {
     display: flex;
     align-items: center;
