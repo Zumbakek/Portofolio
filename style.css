@@ -12,6 +12,8 @@ body {
     background: linear-gradient(135deg, rgba(25, 25, 25, 0.95) 30%, rgba(15, 15, 15, 0.98) 80%);
 }
 
+
+/* Tools & Skils */
 .skills-section {
     color: #fff;
     font-family: sans-serif;
@@ -101,6 +103,8 @@ body {
     margin-bottom: 10px;
 }
 
+
+/* Project */
 .project-card {
     background: rgba(20, 20, 20, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -132,6 +136,61 @@ body {
     width: 100%;
 }
 
+
+/* Certificate */
+.certificate-card {
+    margin: 20px;
+    background-color: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(20, 184, 166, 0.4);
+}
+
+.certificate-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.certificate-content {
+    padding: 20px;
+}
+
+.certificate-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.certificate-desc {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.certificate-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #14b8a6;
+    color: #0f172a;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.certificate-btn:hover {
+    background-color: #0d9488;
+}
+
+/* Responsif */
 @keyframes float {
 
     0%,
