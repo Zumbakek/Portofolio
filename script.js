@@ -1,6 +1,15 @@
 
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("mobile-menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggleBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
+    });
+});
+
 (function () {
-    emailjs.init("NSN7FVHjKC8dw_D5Q"); 
+    emailjs.init("NSN7FVHjKC8dw_D5Q");
 })();
 
 function sendEmail(e) {
