@@ -8,84 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="aos/aos.css">
+    <link rel="stylesheet" href="style.css">
+
     <link rel="icon" type="image/png" href="asset\header.png">
 
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #111;
-            color: #f1f1f1;
-            scroll-behavior: smooth;
-        }
-
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(25, 25, 25, 0.95) 30%, rgba(15, 15, 15, 0.98) 80%);
-        }
-
-        .skill-progress {
-            height: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .skill-progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, rgba(5, 150, 105, 0.8), rgba(13, 148, 136, 0.9));
-            border-radius: 4px;
-            transition: width 1s ease-in-out;
-        }
-
-        .project-card {
-            background: rgba(20, 20, 20, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            border-color: teal;
-            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.1);
-        }
-
-        .nav-link {
-            position: relative;
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: teal;
-            transition: width 0.3s;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .floating {
-            animation: float 6s ease-in-out infinite;
-        }
-    </style>
 </head>
 
 <body>
@@ -129,7 +56,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero-gradient min-h-screen flex items-center pt-20">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0" data-aos="fade-right" data-aos-delay="200">
                 <h1 class="text-4xl md:text-6xl font-bold mb-4">
                     <span class="text-teal-500">Ersan Noprian Saputra</span>
                 </h1>
@@ -146,7 +73,7 @@
                         Me</a>
                 </div>
             </div>
-            <div class="md:w-1/2 flex justify-center">
+            <div class="md:w-1/2 flex justify-center" data-aos="fade-left" data-aos-delay="200">
                 <img src="asset\profil.jpg" alt=""
                     class="rounded-full border-4 border-teal-500 border-opacity-50 w-64 h-64 md:w-80 md:h-80 object-cover floating">
             </div>
@@ -157,24 +84,24 @@
     <!-- About Section -->
     <section id="about" class="hero-gradient py-10">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-10 text-center">
+            <h2 class="text-4xl font-bold mb-10 text-center" data-aos="fade-left" data-aos-delay="200">
                 <span class="text-teal-500">About</span> Me
             </h2>
             <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center" data-aos="fade-right" data-aos-delay="300">
                     <img src="asset\about.jpg" alt=""
                         class="rounded-lg shadow-xl w-full max-w-xs md:w-80 md:h-80 object-cover floating">
                 </div>
                 <div class="md:w-2/3 md:pl-12">
-                    <h3 class="text-xl font-semibold mb-4">Who am I?</h3>
-                    <p class="text-justify text-gray-400 mb-4">
+                    <h3 class="text-xl font-semibold mb-4" data-aos="fade-left" data-aos-delay="500">Who am I?</h3>
+                    <p class="text-justify text-gray-400 mb-4" data-aos="fade-left" data-aos-delay="300">
                         Saya adalah lulusan S1 Sistem Informasi, Universitas Bengkulu, dengan minat dan
                         keahlian dalam pengembangan perangkat lunak, analisis data, serta sistem manajemen
                         informasi. Selain itu, saya memiliki ketertarikan mendalam di bidang multimedia,
                         khususnya dalam desain grafis dan desain UI/UX.
                     </p>
 
-                    <p class="text-justify text-gray-400 mb-4">
+                    <p class="text-justify text-gray-400 mb-4" data-aos="fade-left" data-aos-delay="300">
                         Saya memiliki keterampilan dalam analisis data, perancangan database, serta pembuatan
                         desain UI/UX. Memiliki pemahaman yang kuat tentang pengolahan dan visualisasi data,
                         normalisasi dan optimasi database, serta prinsip desain antarmuka yang berfokus pada
@@ -184,7 +111,7 @@
                         visualisasi data, Figma dan Adobe XD untuk desain UI/UX.
                     </p>
 
-                    <p class="text-justify text-gray-400 mb-4">
+                    <p class="text-justify text-gray-400 mb-4" data-aos="fade-left" data-aos-delay="300">
                         Sebagai individu yang selalu mengikuti perkembangan teknologi, saya berkomitmen
                         untuk terus belajar dan beradaptasi dengan perubahan industri. Dengan kombinasi
                         keterampilan teknis dan kreativitas, saya siap memberikan kontribusi terbaik dalam
@@ -215,29 +142,33 @@
     <section id="education" class="hero-gradient py-20">
         <div class="mx-auto max-w-5xl px-4 py-5 sm:px-6 px-8">
             <span class="flex items-center">
-                <span class="h-px flex-1 bg-gray-300"></span>
-                <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="h-px flex-1 bg-gray-300" data-aos="fade-right" data-aos-delay="300"></span>
+                <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up" data-aos-delay="200">
                     My <span class="text-teal-500">Education</span>
                 </h2>
-                <span class="h-px flex-1 bg-gray-300"></span>
+                <span class="h-px flex-1 bg-gray-300" data-aos="fade-left" data-aos-delay="300"></span>
             </span>
             <ol class="relative border-s border-gray-200 dark:border-gray-700">
                 <li class="mb-10 ms-6">
                     <span
-                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-teal-900">
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-teal-900"
+                        data-aos="fade-right" data-aos-delay="200">
                         <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path
                                 d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                         </svg>
                     </span>
-                    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">S1-Sistem
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+                        data-aos="fade-left" data-aos-delay="100">S1-Sistem
                         Informasi Universitas
                         Bengkulu
                     </h3>
-                    <time class="block mb-2 text-sm font-normal leading-none text-white">2020 -
+                    <time class="block mb-2 text-sm font-normal leading-none text-white" data-aos="fade-left"
+                        data-aos-delay="200">2020 -
                         2024</time>
-                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-justify">S1 Sistem
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-justify"
+                        data-aos="fade-left" data-aos-delay="300">S1 Sistem
                         Informasi lulus dengan IPK 3.53 dan menjadi lulusan termuda Fakultas Tenik
                         Tahun 2024. Selama studi, saya menyelesaikan penelitian berjudul "Analisis
                         Perbandingan Elemen Gamifikasi terhadap Continuance Use Intention pada Aplikasi
@@ -259,28 +190,32 @@
     <section id="organization" class="hero-gradient py-20">
         <div class="mx-auto max-w-5xl px-4 py-5 sm:px-6 px-8">
             <span class="flex items-center">
-                <span class="h-px flex-1 bg-gray-300"></span>
-                <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="h-px flex-1 bg-gray-300" data-aos="fade-right" data-aos-delay="300"></span>
+                <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-down" data-aos-delay="200">
                     <span class="text-teal-500">Organization</span>
                 </h2>
-                <span class="h-px flex-1 bg-gray-300"></span>
+                <span class="h-px flex-1 bg-gray-300" data-aos="fade-left" data-aos-delay="300"></span>
             </span>
             <ol class="relative border-s border-gray-200 dark:border-gray-700">
                 <li class="mb-10 ms-6">
                     <span
-                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-teal-900">
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-teal-900"
+                        data-aos="fade-right" data-aos-delay="100">
                         <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path
                                 d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                         </svg>
                     </span>
-                    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Badan
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+                        data-aos="fade-left" data-aos-delay="200">Badan
                         Eksekutif Mahasiswa Universitas Bengkulu
                     </h3>
-                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Maret
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                        data-aos="fade-left" data-aos-delay="300">Maret
                         2022 - Desember 2022</time>
-                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-justify">Sebagai anggota
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-justify"
+                        data-aos="fade-left" data-aos-delay="400">Sebagai anggota
                         Kementerian
                         Lingkungan Hidup BEM KBM Universitas, saya
                         berperan dalam merancang dan menjalankan program-program yang berfokus pada
@@ -295,18 +230,22 @@
 
                 <li class="mb-10 ms-6">
                     <span
-                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-teal-900">
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-teal-900"
+                        data-aos="fade-right" data-aos-delay="100">
                         <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path
                                 d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                         </svg>
                     </span>
-                    <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Himpunan Mahasiswa Sistem
+                    <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white" data-aos="fade-left"
+                        data-aos-delay="200">Himpunan Mahasiswa Sistem
                         Informasi Universitas Bengkulu</h3>
-                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">September
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                        data-aos="fade-left" data-aos-delay="300">September
                         2021 - September 2022</time>
-                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-justify">Sebagai
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-justify"
+                        data-aos="fade-left" data-aos-delay="400">Sebagai
                         anggota divisi Pengabdian
                         Masyarakat di Himpunan Mahasiswa, saya aktif
                         dalam merancang dan mengoordinasikan berbagai program sosial yang berdampak
@@ -329,11 +268,11 @@
     <section id="experience" class="py-20 hero-gradient">
         <div class="mx-auto max-w-5xl px-4 py-5 sm:px-6 lg:px-8">
             <span class="flex items-center">
-                <span class="h-px flex-1 bg-gray-300"></span>
-                <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="h-px flex-1 bg-gray-300" data-aos="fade-right" data-aos-delay="300"></span>
+                <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up" data-aos-delay="200">
                     <span class="text-teal-500">My</span> Experience
                 </h2>
-                <span class="h-px flex-1 bg-gray-300"></span>
+                <span class="h-px flex-1 bg-gray-300" data-aos="fade-left" data-aos-delay="300"></span>
             </span>
             <div
                 class="relative space-y-8 before:absolute before:top-0 before:left-1/2 before:h-full before:w-0.5 before:-translate-x-1/2 before:rounded-full before:bg-gray-200 dark:before:bg-gray-700">
@@ -342,11 +281,14 @@
                         class="relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last">
                         <span class="size-3 shrink-0 rounded-full bg-teal-500"></span>
                         <div class="mt-2">
-                            <time class="text-xs/none font-medium text-gray-700 dark:text-gray-200">January 2023 - April
+                            <time class="text-xs/none font-medium text-gray-700 dark:text-gray-200"
+                                data-aos="fade-right" data-aos-delay="200">January 2023 - April
                                 2023</time>
-                            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Intership Programmer SMPN 9 Kota
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white" data-aos="fade-right"
+                                data-aos-delay="200">Intership Programmer SMPN 9 Kota
                                 Bengkulu</h3>
-                            <p class="mt-0.5 text-sm text-gray-700 dark:text-gray-200 text-justify text-white py-2">
+                            <p class="mt-0.5 text-sm text-gray-700 dark:text-gray-200 text-justify text-white py-2"
+                                data-aos="fade-right" data-aos-delay="300">
                                 Sukses dalam melakukan perancangan desain UI/UX dan pembuatan sistem informasi
                                 perpustakaan web.
                             </p>
@@ -361,15 +303,19 @@
                         <span class="size-3 shrink-0 rounded-full bg-teal-500"></span>
 
                         <div class="-mt-2">
-                            <time class="text-xs/none font-medium text-gray-700 dark:text-gray-200">November 2018 -
+                            <time class="text-xs/none font-medium text-gray-700 dark:text-gray-200"
+                                data-aos="fade-right" data-aos-delay="200">November 2018 -
                                 February 2019</time>
 
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Intership Staf Teknisi Komputer
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white" data-aos="fade-left"
+                                data-aos-delay="200">Intership Staf Teknisi Komputer
                                 dan
                                 Printer</h3>
-                            <h5 class="font-bold dark:text-white">Wira Computer</h5>
+                            <h5 class="font-bold dark:text-white" data-aos="fade-left" data-aos-delay="200">Wira
+                                Computer</h5>
 
-                            <p class="mt-0.5 text-sm text-gray-700 dark:text-gray-200 text-justify text-white py-2">
+                            <p class="mt-0.5 text-sm text-gray-700 dark:text-gray-200 text-justify text-white py-2"
+                                data-aos="fade-left" data-aos-delay="300">
                                 Sukses dalam melakukan identifikasi masalah dan perbaikan pada software dan hardware
                                 komputer dan printer
                             </p>
@@ -383,129 +329,145 @@
 
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 hero-gradient">
+    <section id="skills" class="py-10 hero-gradient">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center">
-                My <span class="text-teal-500">Skills</span>
+            <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-down" data-aos-delay="200">
+                Tools & <span class="text-teal-500">Skills</span>
             </h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Technical Skills -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-6 flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-teal-500" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                        Technical Skills
-                    </h3>
+                <section class="skills-section">
+                    <div class="container">
+                        <div class="skill-title" data-aos="fade-up" data-aos-delay="100">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            Aplikasi & Tools
+                        </div>
 
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-300">JavaScript</span>
-                                <span class="text-teal-500">90%</span>
-                            </div>
-                            <div class="skill-progress">
-                                <div class="skill-progress-fill" style="width: 90%"></div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <h3 class="text-xl font-semibold mb-4 text-teal-500" data-aos="fade-up" data-aos-delay="200">Desain
+                                </h3>
+                                <div class="skill-icons" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="skill-icon">
+                                        <img src="asset\icon\canva.png" alt="Canva">
+
+                                    </div>
+
+                                    <div class="skill-icon">
+                                        <img src="asset\icon\photoshop.png" alt="Photoshop">
+
+                                    </div>
+
+                                    <div class="skill-icon">
+                                        <img src="asset\icon\adobe-xd.png" alt="AdobeXD">
+
+                                    </div>
+
+                                    <div class="skill-icon">
+                                        <img src="asset\icon\figma.png" alt="figma">
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-300">React</span>
-                                <span class="text-teal-500">85%</span>
-                            </div>
-                            <div class="skill-progress">
-                                <div class="skill-progress-fill" style="width: 85%"></div>
+                        <div class="skill-item">
+                            <h3 class="text-xl font-semibold mb-4 text-teal-500" data-aos="fade-up" data-aos-delay="200">
+                                Administrasi
+                            </h3>
+                            <div class="skill-icons" data-aos="fade-up" data-aos-delay="200">
+                                <div class="skill-icon">
+                                    <img src="asset\icon\microsoft-word.png" alt="Word">
+                                </div>
+
+                                <div class="skill-icon">
+                                    <img src="asset\icon\microsoft-excel .png" alt="Excel">
+                                </div>
+
+                                <div class="skill-icon">
+                                    <img src="asset\icon\microsoft-powerpoint.png" alt="PowerPoint">
+                                </div>
                             </div>
                         </div>
 
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-300">Node.js</span>
-                                <span class="text-teal-500">80%</span>
-                            </div>
-                            <div class="skill-progress">
-                                <div class="skill-progress-fill" style="width: 80%"></div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="text-xl font-semibold mb-4 text-teal-500" data-aos="fade-up" data-aos-delay="200">Analisis Data
+                            </h3>
+                            <div class="skill-icons">
+                                <div class="skill-icon">
+                                    <img src="asset\icon\smartpls-icon.png" alt="smartPLS">
+                                </div>
+
+                                 <div class="skill-icon">
+                                    <img src="asset\icon\colab.png" alt="colab">
+                                </div>
+
+                                <div class="skill-icon">
+                                    <img src="asset\icon\IBM SPSS Statistics.png" alt="spss">
+                                </div>
                             </div>
                         </div>
 
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-300">HTML/CSS</span>
-                                <span class="text-teal-500">95%</span>
-                            </div>
-                            <div class="skill-progress">
-                                <div class="skill-progress-fill" style="width: 95%"></div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="text-xl font-semibold mb-4 text-teal-500" data-aos="fade-up" data-aos-delay="200">Database
+                            </h3>
+                            <div class="skill-icons">
+                                <div class="skill-icon">
+                                    <img src="asset\icon\mysql.png" alt="MySQL">
+                                </div>
+
+                                <div class="skill-icon">
+                                    <img src="asset\icon\microsoft-access.png" alt="Access">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!-- Professional Skills -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                <div class="container">
+                    <div class="skill-title" data-aos="fade-up" data-aos-delay="100">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-teal-500" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                         Professional Skills
-                    </h3>
+                    </div>
 
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-300">Communication</span>
-                                <span class="text-teal-500">90%</span>
-                            </div>
-                            <div class="skill-progress">
-                                <div class="skill-progress-fill" style="width: 90%"></div>
-                            </div>
-                        </div>
+                    <div class="right">
+                        <h3 class="text-teal-500" data-aos="fade-up" data-aos-delay="200">Hard Skill</h3>
+                        <ul data-aos="fade-up" data-aos-delay="200">
+                            <li>Keterampilan dalam basis data (MySQL, Access)</li>
+                            <li>Keterampilan dalam penggunaan Microsoft Office (Word, Excel, PowerPoint)</li>
+                            <li>Analisis dan visualisasi data (Data mining, SPSS, SmartPLS)</li>
+                            <li>Desain Grafis (Canva, Photoshop)</li>
+                            <li>Desain UI/UX (Figma, Adobe XD)</li>
+                        </ul>
 
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-300">Teamwork</span>
-                                <span class="text-teal-500">85%</span>
-                            </div>
-                            <div class="skill-progress">
-                                <div class="skill-progress-fill" style="width: 85%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-300">Problem Solving</span>
-                                <span class="text-teal-500">88%</span>
-                            </div>
-                            <div class="skill-progress">
-                                <div class="skill-progress-fill" style="width: 88%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-300">Creativity</span>
-                                <span class="text-teal-500">82%</span>
-                            </div>
-                            <div class="skill-progress">
-                                <div class="skill-progress-fill" style="width: 82%"></div>
-                            </div>
+                        <div class="soft-skill">
+                            <h3 class="text-teal-500" data-aos="fade-up" data-aos-delay="200">Soft Skill</h3>
+                            <ul data-aos="fade-up" data-aos-delay="200">
+                                <li>Kemauan belajar yang kuat</li>
+                                <li>Kreativitas</li>
+                                <li>Kemampuan beradaptasi</li>
+                                <li>Kerjasama tim</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 hero-gradient">
+    <section id="projects" class="py-10 hero-gradient">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-zoom-in" data-aos-delay="300">
                 <span class="text-teal-500">Projects</span> Recent
             </h2>
 
@@ -770,8 +732,17 @@
         </div>
     </footer>
 
+    <script src="aos/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false
+        })
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="script.js"></script>
+
+
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 
 (function () {
-    emailjs.init("NSN7FVHjKC8dw_D5Q"); // Ganti dengan user ID dari EmailJS
+    emailjs.init("NSN7FVHjKC8dw_D5Q"); 
 })();
 
 function sendEmail(e) {
