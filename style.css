@@ -1,31 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 #mobile-menu {
-    background-color: #2d3748;
-    /* Dark gray background */
-    border-top: 2px solid #4a5568;
-    /* Lighter gray border */
-    padding: 0.5rem 0;
-    /* Reduced padding for the menu */
+    border-top: 2px solid teal;
+    /* padding: 0.5rem 0; */
     transition: max-height 0.3s ease;
-    /* Smooth transition for opening/closing */
 }
 
 #mobile-nav-links a {
-    padding: 0.5rem 1rem;
-    /* Reduced padding for links */
-    color: white;
-    /* Link color */
+    padding: 0.5rem;
+    color: teal;
     text-align: center;
-    /* Center align text */
     display: block;
-    /* Make links block elements */
     width: 100%;
-    /* Full width */
     transition: background-color 0.3s;
-    /* Smooth background color transition */
     margin: 0;
-    /* Remove margin */
 }
 
 #mobile-nav-links a:hover {
@@ -67,7 +55,7 @@ body {
 .skills-section {
     color: #fff;
     font-family: sans-serif;
-    margin-left: 40px;
+    /* margin-left: 20px; */
 }
 
 .skills-section h2 {
@@ -101,6 +89,10 @@ body {
     border-radius: 10px;
     width: fit-content;
     transition: transform 0.3s ease;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .skill-item:hover {
